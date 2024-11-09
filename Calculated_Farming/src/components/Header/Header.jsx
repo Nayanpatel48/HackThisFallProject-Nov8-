@@ -38,35 +38,54 @@ export default function Header() {
                             </li>
                             <li>
                                 <NavLink
-                                to="/about"
+                                to="/calculate"
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-white"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
-                                    About
+                                    Calculate
                                 </NavLink>
                             </li>
                             <li>
                                 <NavLink
-                                to="/contact"
+                                to="/explore"
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-white"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
-                                    Contact
+                                    Explore
                                 </NavLink>
                             </li>
                             <li>
                                 <NavLink
-                                to="/github"
+                                to="/feedback"
                                     className={({isActive}) =>
                                         `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-white"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
                                     }
                                 >
-                                    Github
+                                    Feedback
                                 </NavLink>
                             </li>
-                            
+                            <li>
+                                <NavLink
+                                to="/createaccount"
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-white"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    Create Account
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink
+                                to="/login"
+                                    className={({isActive}) =>
+                                        `block py-2 pr-4 pl-3 duration-200 ${isActive ? "text-orange-700" : "text-white"} border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 hover:text-orange-700 lg:p-0`
+                                    }
+                                >
+                                    Login
+                                </NavLink>
+                            </li>
                         </ul>
                     </div>
                 </div>

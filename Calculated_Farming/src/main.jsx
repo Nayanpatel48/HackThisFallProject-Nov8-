@@ -4,11 +4,13 @@ import { createRoot } from 'react-dom/client'
 import {createBrowserRouter, createRoutesFromElements, RouterProvider} from "react-router-dom"
 import './index.css'
 import Layout from './Layout'
-//import About from './components/About/About'
+import Calculate from './components/Calculate/Calculate'
 import Home from './components/Home/Home'
-//import Contact from './components/Contact/Contact'
+import Explore from './components/Explore/Explore'
 import { Route } from 'react-router-dom'
-//import Github from './components/Github/Github'
+import Feedback_about from './components/Feedback_about/Feedback_about'
+import CreateAccount from './components/CreateAccount/CreateAccount'
+import Login from './components/Login/Login'
 
 //old approach
 // const router = createBrowserRouter([
@@ -38,6 +40,11 @@ const router = createBrowserRouter(
     // here path spelling matters not convention means upper and lower cases both are equal here
     <Route path="/"  element={<Layout/>}>
       <Route path="/"  element={<Home/>}/>
+      <Route path="/calculate"  element={<Calculate/>}/>
+      <Route path="/explore"  element={<Explore/>}/>
+      <Route path="/feedback"  element={<Feedback_about/>}/>
+      <Route path="/createaccount"  element={<CreateAccount/>}/>
+      <Route path="/login"  element={<Login/>}/>
     </Route>
   )
 )
