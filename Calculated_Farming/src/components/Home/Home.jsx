@@ -34,12 +34,12 @@ export default function Home() {
                         </p>
 
                         <NavLink
-                            to="/createaccount"
+                            to="/calculate"
                             class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse w-full sm:w-auto bg-green-400 hover:bg-green-400 focus:ring-4 focus:outline-none focus:ring-green-400 text-dark rounded-lg inline-flex px-4 py-2.5 dark:bg-green-400 dark:hover:bg-green-400 dark:focus:ring-green-300"
                         >
                         <div >
                                 <div class="bg-green-400 rounded-sm h-9 text-center justify-items-center">
-                                    login/signup
+                                    Calculate
                                 </div>
                         </div>
                         </NavLink>
