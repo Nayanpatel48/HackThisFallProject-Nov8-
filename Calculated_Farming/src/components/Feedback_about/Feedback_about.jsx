@@ -1,16 +1,25 @@
 import React, { useState } from 'react';
 
-function Feedback_about() {
+function FeedbackAbout() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [feedback, setFeedback] = useState('');
+    const [satisfaction, setSatisfaction] = useState(null); // For emoji levels
     const [submitted, setSubmitted] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Process form submission logic here
+        // Process form submission logic here, including satisfaction level
         setSubmitted(true); // Show a confirmation message after submission
     };
+
+    const satisfactionLevels = [
+        { emoji: '😡', label: 'Very Dissatisfied' },
+        { emoji: '😕', label: 'Dissatisfied' },
+        { emoji: '😐', label: 'Neutral' },
+        { emoji: '🙂', label: 'Satisfied' },
+        { emoji: '😄', label: 'Very Satisfied' }
+    ];
 
     return (
         <div className="flex flex-col items-center p-6 bg-gray-100 min-h-screen">
@@ -65,6 +74,27 @@ function Feedback_about() {
                             ></textarea>
                         </div>
 
+                        <div>
+                            <label className="block text-gray-700 font-medium mb-2">
+                                How satisfied are you?
+                            </label>
+                            <div className="flex justify-between items-center">
+                                {satisfactionLevels.map((level, index) => (
+                                    <button
+                                        type="button"
+                                        key={index}
+                                        onClick={() => setSatisfaction(level.label)}
+                                        className={`text-3xl ${
+                                            satisfaction === level.label ? 'bg-blue-200' : ''
+                                        } rounded-full p-2 focus:outline-none transition duration-200`}
+                                        title={level.label}
+                                    >
+                                        {level.emoji}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
+
                         <button
                             type="submit"
                             className="w-full bg-blue-600 text-white font-medium py-3 rounded-lg hover:bg-blue-700 transition duration-300"
@@ -78,4 +108,4 @@ function Feedback_about() {
     );
 }
 
-export default Feedback_about;
+export default FeedbackAbout;

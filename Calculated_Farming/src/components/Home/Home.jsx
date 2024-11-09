@@ -10,16 +10,16 @@ export default function Home() {
                 <div className="bg-blue-200 p-4 h-max bg-[url('/home/nayan/Github/HackThisFallProject-Nov8-/Calculated_Farming/src/farming.jpg')] bg-cover bg-center flex items-center justify-center rounded-lg">
                     <h1 className="mb-4 text-outline font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-white border-2 border-white md:text-5xl lg:text-9xl">
                         <span className="bg-clip-text text-transparent text-green-100 border-white">
-                            Better Farming
+                            Better Farming,
                         </span>
                         <p></p>
                         <span className="bg-clip-text text-transparent text-amber-100 border-white">
-                            Calculated Farming
+                            Calculated Farming.
                         </span>
                     </h1>
                 </div>
-                <div class="bg-gray-800 h-full bg-[url('/home/nayan/Github/HackThisFallProject-Nov8-/Calculated_Farming/src/playground.jpg')] bg-cover bg-center flex items-center justify-center rounded-lg">
-                <Spline scene="https://prod.spline.design/LIVEcv1-XAR0Tdrm/scene.splinecode" />
+                <div class="bg-gray-800 h-full bg-cover bg-center flex items-center justify-center rounded-lg">
+                <Spline scene="https://prod.spline.design/Q8UeOw14KLvtLkO8/scene.splinecode" />
                 </div>
             </div>
 
