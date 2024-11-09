@@ -1,6 +1,6 @@
 import React from 'react'
-import Spline from '@splinetool/react-spline';
 import { NavLink } from 'react-router-dom';
+import Spline from '@splinetool/react-spline';
 
 export default function Home() {
     return (
@@ -18,8 +18,8 @@ export default function Home() {
                         </span>
                     </h1>
                 </div>
-                <div class="bg-blue-300 h-full">
-                    <Spline scene="https://prod.spline.design/9yrVT55R-648NZ-5/scene.splinecode" class="rounded-lg"/>
+                <div class="bg-gray-800 h-full bg-[url('/home/nayan/Github/HackThisFallProject-Nov8-/Calculated_Farming/src/playground.jpg')] bg-cover bg-center flex items-center justify-center rounded-lg">
+                <Spline scene="https://prod.spline.design/LIVEcv1-XAR0Tdrm/scene.splinecode" />
                 </div>
             </div>
 
