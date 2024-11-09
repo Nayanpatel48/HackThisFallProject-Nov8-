@@ -1,11 +1,11 @@
 import React from 'react'
 
-function App() {
+function Feedback_about() {
     return (
         <>
-            
+
         </>
     )
 }
 
-export default App
+export default Feedback_about
