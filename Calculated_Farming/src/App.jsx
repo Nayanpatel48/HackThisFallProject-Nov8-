@@ -1,9 +1,10 @@
-function App() {
+import React from 'react'
 
-  return (
-    <>
-      <h1 className="bg-black text-white">Hello</h1>
-    </>
-  )
+function App() {
+    return (
+        <>
+        </>
+    )
 }
+
 export default App
