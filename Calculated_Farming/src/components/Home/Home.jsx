@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import Spline from '@splinetool/react-spline';
+import { NavLink } from 'react-router-dom';
 
 export default function Home() {
     return (
@@ -32,15 +32,17 @@ export default function Home() {
                         Log in to access smart tools for optimizing your farm’s productivity.
 
                         </p>
-                        <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
-                            <a href="#" class="w-full sm:w-auto bg-green-400 hover:bg-green-400 focus:ring-4 focus:outline-none focus:ring-green-400 text-dark rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-green-400 dark:hover:bg-green-400 dark:focus:ring-green-300">
-                                <div class="text-left rtl:text-right">
-                                    <div class="-mt-1 font-sans text-md font-semibold">
-                                        login/signup
-                                    </div>
+
+                        <NavLink
+                            to="/createaccount"
+                            class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse w-full sm:w-auto bg-green-400 hover:bg-green-400 focus:ring-4 focus:outline-none focus:ring-green-400 text-dark rounded-lg inline-flex px-4 py-2.5 dark:bg-green-400 dark:hover:bg-green-400 dark:focus:ring-green-300"
+                        >
+                        <div >
+                                <div class="bg-green-400 rounded-sm h-9 text-center justify-items-center">
+                                    login/signup
                                 </div>
-                            </a>
                         </div>
+                        </NavLink>
                     </div>
                 </div>
             </div>
