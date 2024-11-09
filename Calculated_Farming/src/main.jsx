@@ -9,8 +9,6 @@ import Home from './components/Home/Home'
 import Explore from './components/Explore/Explore'
 import { Route } from 'react-router-dom'
 import Feedback_about from './components/Feedback_about/Feedback_about'
-import CreateAccount from './components/CreateAccount/CreateAccount'
-import Login from './components/Login/Login'
 import GoogleGemini from './components/GoogleGemini/GoogleGemini'
 
 //old approach
@@ -44,8 +42,6 @@ const router = createBrowserRouter(
       <Route path="/calculate"  element={<Calculate/>}/>
       <Route path="/explore"  element={<Explore/>}/>
       <Route path="/feedback"  element={<Feedback_about/>}/>
-      <Route path="/createaccount"  element={<CreateAccount/>}/>
-      <Route path="/login"  element={<Login/>}/>
       <Route path="/googlegemini"  element={<GoogleGemini/>}/>
     </Route>
   )

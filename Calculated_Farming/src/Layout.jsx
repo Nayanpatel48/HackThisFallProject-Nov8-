@@ -9,8 +9,12 @@ import {
   signInWithEmailAndPassword,
 } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
 
-function Layout() {
-  const [userLoggedIn, setUserLoggedIn] = useState(false);
+function Layout(
+  {
+    hello=false
+  }
+) {
+  const [userLoggedIn, setUserLoggedIn] = useState(hello);
   const [trackLogin, setTrackLogin] = useState(false); // true for login, false for register
   const [formData, setFormData] = useState({
     name: '',
@@ -19,6 +23,7 @@ function Layout() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const navigate = useNavigate();
+
 
   // Firebase configuration
   const firebaseConfig = {
@@ -116,7 +121,7 @@ function Layout() {
   if (userLoggedIn) {
     return (
       <>
-        <Header />
+        <Header email={formData.name} password={formData.password}/>
         <Outlet />
         <Footer />
       </>
